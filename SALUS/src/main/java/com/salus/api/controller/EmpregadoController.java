@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,11 +44,6 @@ public class EmpregadoController {
 		empregados.add(new Empregado("Guilherme",9000.00));
 		empregados.add(new Empregado("Rafael",12000.00));
 		
-		empregados = empregados.stream().filter(empregado -> empregado.getNome().equals("Rafael"))
-				.collect(Collectors.toList());
-		
-		Optional<Empregado> empregado = empregados.stream().findFirst();
-				
 		return empregados;
 	}
 }
