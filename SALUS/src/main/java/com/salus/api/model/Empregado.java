@@ -1,6 +1,6 @@
 package com.salus.api.model;
 
-public class Empregado {
+public class Empregado{
 
 	String nome;
 	
@@ -25,4 +25,6 @@ public class Empregado {
 	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
+	
+	
 }
