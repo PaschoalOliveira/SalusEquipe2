@@ -69,11 +69,11 @@ public class EmpregadoController {
 		}
 		
 		empregados = empregados
-						.stream()
-						.map(empregado -> {
-							empregado.setSalario(8000.00);
-							return empregado;
-						}).collect(Collectors.toList());
+				.stream()
+				.map(empregado -> {
+					empregado.setSalario(8000.00);
+					return empregado;
+				}).collect(Collectors.toList());
 		
 		return empregados;
 	}
