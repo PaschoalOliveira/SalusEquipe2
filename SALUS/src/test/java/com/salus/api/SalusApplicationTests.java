@@ -8,6 +8,7 @@ class SalusApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }
